@@ -1,0 +1,381 @@
+.header {
+  &_inner {
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  color: $w;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.444444px;
+}
+
+.menu {
+  &_list {
+    width: 192px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+
+  &_list-item {
+    height: 25px;
+    z-index: 1000;
+  }
+
+  &_list-link {
+    width: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //з точки зору банальної ерудиції треба буде надати картинки
+  }
+
+  &_list-link:hover {
+    svg path {
+      fill: $grn;
+    }
+  }
+}
+
+.person {
+  background-image: url(../img/rounds.png);
+  background-repeat: no-repeat;
+  background-position: top 23px left -100px;
+  padding-bottom: 219px;
+  .container {
+    position: relative;
+  }
+  &_content {
+    padding-top: 88px;
+    max-width: 706px;
+  }
+
+  &_title {
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    color: $w;
+    margin-bottom: 43px;
+    span {
+      background-image: url(../img/Rectangle.png);
+      background-repeat: no-repeat;
+      background-position: bottom 5px center;
+    }
+  }
+
+  &_text {
+    color: $g;
+    margin-bottom: 66px;
+    width: 445px;
+  }
+
+  &_link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.28571px;
+    color: $w;
+    border-bottom: 2px solid $grn;
+    padding-bottom: 10px;
+    transition: 0.5s;
+  }
+
+  &_link:hover {
+    color: #4ee1a0;
+  }
+
+  &_avatar {
+    width: 384px;
+    height: 620px;
+    background-image: url(../img/adam.png);
+    background-repeat: no-repeat;
+    background-color: $dg;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+    right: 0;
+    top: -110px;
+  }
+
+  &_avatar::before {
+    width: 129px;
+    height: 129px;
+    border-radius: 50%;
+    border: 1px solid $w;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    content: "";
+  }
+}
+
+.skills {
+  background-image: url(../img/rounds.png);
+  background-repeat: no-repeat;
+  background-position: bottom 85px right -239px;
+  padding-bottom: 120px;
+  hr {
+    background: $w;
+  }
+
+  &_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 37px;
+    padding-top: 72px;
+  }
+
+  &_inner-item {
+    width: 345px;
+    margin-bottom: 20px;
+  }
+
+  &_inner-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    color: $w;
+    margin-bottom: 14px;
+  }
+
+  &_inner-text {
+    color: $g;
+  }
+}
+
+.project {
+  &_header {
+  }
+
+  .header {
+    &_inner {
+      margin-bottom: 80px;
+    }
+
+    &_inner-title {
+      font-weight: 700;
+      font-size: 88px;
+      line-height: 88px;
+      color: $w;
+      letter-spacing: -2.5px;
+    }
+
+    &_inner-link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 2.28571px;
+      color: $w;
+      border-bottom: 2px solid $grn;
+      padding-bottom: 10px;
+      transition: 0.5s;
+    }
+
+    &_inner-link:hover {
+      color: #4ee1a0;
+    }
+  }
+}
+
+.project {
+  padding-bottom: 139px;
+  &_galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  &_galery-item {
+  }
+
+  &_galery-item:nth-child(1) .project_galery-screen {
+    background-image: url(../img/bg_e-lerning.png);
+    background-size: contain;
+  }
+
+  &_galery-screen {
+    width: 540px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: red;
+    transition: 0.5s;
+  }
+
+  &_galery-screen:hover .project_galery-bg {
+    display: flex;
+  }
+
+  &_galery-bg {
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  &_galery-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.28571px;
+    color: $w;
+    border-bottom: 2px solid $grn;
+    padding-bottom: 10px;
+    transition: 0.5s;
+  }
+
+  &_galery-link:hover {
+    color: #4ee1a0;
+  }
+
+  &_galery-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    background: 8px;
+    color: $w;
+  }
+
+  &_galery-tech {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $g;
+    span + span {
+      margin-left: 18px;
+    }
+  }
+}
+
+.footer {
+  padding-top: 84px;
+  background: $dg;
+  &_up {
+    background-image: url(../img/rounds.png);
+    background-repeat: no-repeat;
+    background-position: bottom 47px left -205px;
+    padding-bottom: 92px;
+  }
+
+  &_up-inner {
+    display: flex;
+    gap: 220px;
+  }
+
+  &_up-content {
+  }
+
+  &_up-title {
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    color: $w;
+    margin-bottom: 36px;
+  }
+
+  &_up-text {
+    width: 445px;
+    color: $g;
+  }
+
+  &_up-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+    input {
+      width: inherit;
+      height: 43px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.222222px;
+      font-family: "Space Grotesk", sans-serif;
+      text-transform: uppercase;
+      background-color: transparent;
+      padding: 0 24px 17px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $w;
+    }
+
+    textarea {
+      width: inherit;
+      height: 107px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.222222px;
+      font-family: "Space Grotesk", sans-serif;
+      text-transform: uppercase;
+      background-color: transparent;
+      padding: 0 24px 17px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $w;
+      resize: none;
+    }
+
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &_up-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.28571px;
+    background: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #4ee1a0;
+    padding-bottom: 10px;
+    transition: 0.5s;
+  }
+
+  .footer_up-btn:hover {
+    color: $grn;
+  }
+
+  &_down {
+  }
+}
+
+.header {
+  &_inner {
+  }
+}
+.logo {
+}
+.menu {
+  &_list {
+  }
+
+  &_list-item {
+  }
+
+  &_list-link {
+  }
+}
